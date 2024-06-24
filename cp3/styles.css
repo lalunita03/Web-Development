@@ -1,0 +1,133 @@
+ /*
+    Author: Lea Grohmann
+    CS 132 Spring 2024
+    Date: June 8th, 2024
+
+    This is the styles.css page for my World Game
+*/
+
+
+/* Flex Layouts */
+header, #options, #game-view, #buttons, nav ul, body, #buttons {
+    display: flex;
+}
+
+nav, main {
+    flex-grow: 1;
+}
+
+#game-view, header {
+    justify-content: space-around;
+}
+
+nav ul {
+    justify-content: space-evenly;
+}
+
+
+#buttons{
+    justify-content: space-between;
+}
+
+#options {
+    flex-wrap: wrap;
+}
+
+header {
+    align-items: center;
+}
+
+
+/* Margin and Paddings */
+figure, h1, body {
+    margin: 0;
+}
+
+#start-btn, aside, section {
+    padding: 10px;
+}
+
+h1 {
+    padding: 30px;
+}
+
+nav ul {
+    padding: 0;
+}
+
+
+/* Colors */
+footer a, header, footer, #start-btn {
+    color: #e0ffff;
+}
+
+figcaption a, .current {
+    color: forestgreen;
+}
+
+header, footer {
+    background-color: black;
+}
+
+
+/* Text and Font Styles */
+#home-view, footer {
+    text-align: center;
+}
+
+figcaption {
+    text-align: left;
+}
+
+.current, #start-btn {
+    font-weight: bold;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* Width and Heights */
+
+section {
+    max-width: 320px;
+}
+
+figure img {
+    width: 100%;
+}
+
+
+/* Other Styles */
+#options label { 
+    padding: 8px;
+    padding-right: 20px;
+    width: 120px;
+}
+
+#start-btn {
+    background-color: forestgreen;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+body {
+    flex-direction: column;
+    background-color: #e0ffff;
+    min-height: 100vh;
+}
+
+aside, section {
+    border: 6px solid forestgreen;
+    margin: 20px;
+}
+
+figcaption {
+    font-size: 10pt;
+    padding-left: 10px;
+}
+
+.hidden, #game-view.hidden, #home-view.hidden {
+    display: none;
+}

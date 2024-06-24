@@ -1,0 +1,148 @@
+ /*
+    Name: Lea Grohmann
+    CS 132 Spring 2024
+    Date: April 13th, 2024
+    This is the styles.css page for my cat Boris' website.
+*/
+
+/* for things that don't change */
+nav {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 20pt;
+    font-family: "Comic Sans MS", cursive;
+    text-align: center;
+    margin-top: 0;
+}
+
+nav ul {
+    display: flex;
+    /* remove default padding for ul */
+    padding-left: 0;
+}
+
+nav ul li {
+    background-color: greenyellow;
+    display: inline-block;
+    padding: 10px;
+    flex-grow: 1;
+    border: 2px solid rgb(83, 79, 79);
+}
+
+nav ul a {
+    text-decoration: none;
+    padding: 25px;
+    font-size: 18pt;
+    font-family: "Comic Sans MS", cursive;
+    color: darkgreen
+}
+
+nav ul a:hover {
+    color: silver;
+}
+
+body {
+    background-color: lightgray;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-family: "Handlee", cursive;
+}
+
+header {
+    background-color: rgb(83, 79, 79);
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: rgb(83, 79, 79);
+    color: whitesmoke;
+    text-align: center;
+    font-size: 8pt;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* for meow.html */
+div {
+    display: flex;
+
+}
+
+section {
+    width: 500px;
+    text-align: center;
+}
+
+aside {
+    flex: 1;
+}
+
+section img {
+    height: 200px;
+}
+
+aside ul {
+    font-family: "Handlee", cursive;
+}
+
+
+/* for family.html */
+#container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+article {
+    color: rgb(111, 235, 40);
+    background-color:rgb(83, 79, 79);
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+article img {
+    height: 100px;
+}
+
+
+/* for skills.html */
+div > div {
+    text-align: center;
+    display: flex;
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    margin: 6px;
+    background-color:rgb(83, 79, 79);
+    color: rgb(111, 235, 40);
+}
+
+
+/* for mission.html */
+h2, h3, h4 {
+    font-size: 25px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+img {
+    height: 200px;
+}

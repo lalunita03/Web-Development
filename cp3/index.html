@@ -1,0 +1,105 @@
+ <!--
+     Name: Lea Grohmann 
+     CS 132 Spring 2024
+     Date: June 8th, 2024
+     This is the main page and game page for the World Game
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Handlee&display=swap" rel="stylesheet">
+    <script src="utils.js"></script>
+    <script defer src="cp3-countries.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <h1>Home button</h1>
+        <nav>
+            <ul>
+                <li>
+                    <h2>Select Game</h2>
+                    <select id="select-game">
+                      <option value="1">Currency Game</option>
+                      <option value="2" selected>Language Game</option>
+                      <option value="3">Another Game</option>
+                    </select>
+                </li>
+
+                <li>
+                    <h2>Select Number of Questions</h2>
+                    <select id="select-questions">
+                      <option value="10">10 Questions</option>
+                      <option value="15" selected>15 Questions</option>
+                      <option value="20">20 Questions</option>
+                    </select>
+                </li>
+                <li>
+                    <h2>Select Continent</h2>
+                    <select id="select-continent">
+                      <option value="1">Asia</option>
+                      <option value="2" selected>Europe</option>
+                      <option value="3">Africa</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <p id="message-area" class="hidden"></p>
+
+
+        <div id="home-view">
+            <h2>THE WORLD GAME</h2>
+            <figure>
+                <img src="imgs/world.jpg" alt="world image">
+                <figcaption>Source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Earth_from_Space.jpg/1200px-Earth_from_Space.jpg?20070814130228">wikipedia.com</a></figcaption>
+            </figure>
+    
+            <p>Here you will learn interesting facts about countries from all around the world. Test your knowledge and see
+                how well you know the countries of the world. You might be surprised! Selct your game specifications above
+                and click the start button once your ready to play.
+            </p>
+    
+            <button id="start-btn">START THE GAME</button>
+        </div>
+
+
+
+        <div id="game-view" class="hidden">
+            <aside>
+                <h3>What are the official languages spoken in __ ?</h3>
+                <ul id="questions">
+                    <!--Populate Contries-->
+                </ul>
+            </aside>
+            
+            <section>
+                <p>Choose one or more of the following languages:</p>
+                <div id="options">
+                    <!--Populate Languages-->
+                </div>
+
+                <div id="buttons">
+                    <button id="back-btn">Back</button>
+                    <button id="save-btn">Save</button>
+                    <button id="submit-btn">Submit</button>
+                    <button id="next-btn">Next</button>
+                </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Used the <a href="https://restcountries.com/">Countries API</a></p>
+    </footer>
+</body>
+</html>

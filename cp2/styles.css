@@ -1,0 +1,143 @@
+ /*
+    Name: Lea Grohmann
+    CS 132 Spring 2024
+    Date: April 13th, 2024
+    This is the styles.css page for my cat Boris' website.
+*/
+
+/* Flex Layout */
+nav ul, body, #about-meow, section, #container, div {
+    display: flex;
+}
+
+body, section {
+    flex-direction: column;
+}
+
+nav ul li, main {
+    flex-grow: 1;
+}
+
+#container {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+/* Text Formatting */
+p, ul li, label {
+    font-family: "Handlee", cursive;
+}
+
+h1, h2, nav ul a {
+    font-family: 'Comic Sans MS', cursive;
+}
+
+nav, h1, footer, section, article, div {
+    text-align: center;
+}
+
+h1, nav ul a {
+    font-size: 20pt;
+}
+
+footer {
+    font-size: 8pt;
+}
+
+
+/* Colors */
+article, div {
+    color: rgb(111, 235, 40);
+}
+
+header, footer, article, div {
+    background-color: rgb(83, 79, 79);
+}
+
+nav ul a:hover {
+    color: silver;
+}
+
+h1, footer {
+    color: whitesmoke;
+}
+
+
+/* Margins and Padding */
+footer p, body {
+    margin: 0;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+article {
+    margin: 10px;
+}
+
+main, div, nav ul a {
+    padding: 20px;
+}
+
+article, nav ul li, footer, section > img {
+    padding: 10px;
+}
+
+nav ul {
+    /* remove default padding for ul */
+    padding-left: 0;
+}
+
+/* Dimensions */
+img, div {
+    height: 200px;
+}
+
+article img {
+    height: 100px;
+}
+
+article {
+    height: 150px
+}
+
+/* Other Styles */
+section {
+    width: 500px;
+    align-items: center;
+}
+
+div {
+    width: 300px;
+    margin: 6px;
+    justify-content: center;
+}
+
+body {
+    background-color: silver;
+    height: 100vh;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: darkgreen
+}
+
+nav ul li {
+    background-color: greenyellow;
+    display: inline-block;
+    border: 2px solid rgb(83, 79, 79);
+}
+
+
+/* Interactivity for JS */
+div {
+    cursor: pointer;
+}
+
+/* Hidden for JS */
+.hidden, #secret-password.hidden, #secret-info.hidden, img.hidden, p.hidden {
+    display: none;
+}
