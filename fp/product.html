@@ -1,0 +1,64 @@
+ <!--
+     Name: Lea Grohmann 
+     CS 132 Spring 2024
+     Date: May 28th, 2024
+     This is the product page for an apple tree
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tree Store</title>
+    <link rel="stylesheet" href="product.css">    
+    <script src="utils.js"></script>
+    <script defer src="product.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">The Tree Store</a></h1>
+        <nav>
+            <ul>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img src="https://img.ehowcdn.com/630x/clsd/getty/f30040cc89774dbf8db38a0e74bed9d2.jpg?type=webp" alt="Apple Tree">
+
+        <div>
+            <h2>Apple Tree</h2>
+
+            <ul>
+                <li>Tree Family: Fruit Tree</li>
+                <li>Experience Level: Intermediate</li>
+                <li>Care tips:
+                    <ul>
+                        <li>cut back regularly</li>
+                        <li>climb tree</li>
+                        <li>don't let tree get sick</li>
+                        <li>give tree food</li>
+                        <li>don't let termites eat tree</li>
+                        <li>get two trees or else they will be lonely</li>
+                    </ul>
+                </li>
+                <li>Select age (in years):
+                    <label><input type="radio" id="age1" name="age">1</label>
+                    <label><input type="radio" id="age3" name="age">3</label>
+                    <label><input type="radio" id="age5" name="age">5</label>
+                    <label><input type="radio" id="age10" name="age">10</label>
+                    <label><input type="radio" id="age20" name="age">20</label>
+                </li>
+
+                <li><label>Select quantity:<input type="number" id="quantity" name="quantity" min="1" value="1"></label></li>
+                <li><button id="add-btn">Add to Cart</button> (Total Price: $x.xx)</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Trees are cool!</p>
+    </footer>
+</body>
+</html>

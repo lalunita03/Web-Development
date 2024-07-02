@@ -1,0 +1,125 @@
+/* flex layouts */
+
+header, main, body, article, aside, aside div {
+    display: flex;
+}
+
+article, aside {
+    justify-content: space-between;
+}
+
+main, header, article  {
+    align-items: center;
+}
+
+main, body {
+    flex-direction: column;
+}
+
+header h1, main {
+    flex-grow: 1;
+}
+
+
+/* Colors */
+
+header, button {
+    background-color: chocolate;
+}
+
+header, header a, button {
+    color: rgb(248, 222, 204);
+}
+
+
+/* Margin, Padding and Borders */
+
+main {
+    margin: 10px;
+    border: 6px dotted #511b01;
+    padding: 10px;
+}
+
+header h1, nav ul, aside p {
+    margin: 0;
+}
+
+article, footer p {
+    margin: 6px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+article ul {
+    margin-right: 40px;
+}
+
+aside p {
+    padding-right: 10px;
+}
+
+
+/* Font Styles */
+
+body, button {
+    font-family: 'Marker Felt', fantasy;
+}
+
+header h1, footer, h2 {
+    text-align: center;
+}
+
+nav ul, div > ul, article ul {
+    list-style-type: none;
+}
+
+p {
+    font-size: large;
+}
+
+footer p {
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Other Styles */
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 14px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(248, 222, 204);
+    color: #511b01;
+}
+
+nav ul {
+    padding: 0;
+    font-size: larger;
+}
+
+article {
+    width: 600px;
+    border: 2px solid #511b01;
+}
+
+nav ul li {
+    display: inline;
+}
+
+img {
+    height: 50px;
+}
+
+.hidden {
+    display: none;
+}

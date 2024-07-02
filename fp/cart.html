@@ -1,0 +1,73 @@
+ <!--
+     Name: Lea Grohmann 
+     CS 132 Spring 2024
+     Date: May 28th, 2024
+     This is the cart page for an The Tree Store (e-commerce)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tree Store</title>
+    <link rel="stylesheet" href="cart.css">
+    <script src="utils.js"></script>
+    <script defer src="cart.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">The Tree Store</a></h1>
+        <nav>
+            <ul>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Your Current Order</h2>
+
+        <div id="empty">
+            <p>You have not added any items to your cart.</p>
+        </div>
+
+        <div id="full" class="hidden">
+            <section>
+            <!--To be populated-->
+
+            <!--
+                <article id="item0">
+                    <figure>
+                        <img src="https://img.ehowcdn.com/630x/clsd/getty/f30040cc89774dbf8db38a0e74bed9d2.jpg?type=webp" alt="Apple Tree">
+                        <figcaption>Apple Tree</figcaption>
+                    </figure>
+                    <ul>
+                        <li>Quantity: 4</li>
+                        <li>Price: $200</li>
+                        <li><button id="remove-btn0">Remove Item</button></li>
+                    </ul>
+                </article>
+            -->
+            </section>
+
+            <aside>
+                <button id="clear-btn">Clear Cart</button>
+                <div>
+                    <p>Order Total: $<span id="price">0</span></p>
+                    <button id="submit-btn">Submit Order</button>
+                </div>
+            </aside>
+        </div>
+
+        <div id="ordered" class="hidden">
+            <p>We have recieved your order!</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Trees are cool!</p>
+    </footer>
+</body>
+</html>

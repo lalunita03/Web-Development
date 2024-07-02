@@ -1,0 +1,101 @@
+/* flex layouts */
+
+header, main, body {
+    display: flex;
+}
+
+header, main {
+    align-items: center;
+}
+
+main {
+    justify-content: space-around;
+}
+
+header h1, main {
+    flex-grow: 1;
+}
+
+/* Colors */
+
+header, button {
+    background-color: chocolate;
+}
+
+header, header a, button {
+    color: rgb(248, 222, 204);
+}
+
+
+/* Margin, Padding and Borders */
+
+main {
+    margin: 10px;
+    border: 6px dotted #511b01;
+    padding: 10px;
+}
+
+header h1, nav ul {
+    margin: 0;
+}
+
+main {
+    margin-top: 20px;
+}
+
+
+/* Font Styles */
+
+body, button {
+    font-family: 'Marker Felt', fantasy;
+}
+
+header h1, footer, h2 {
+    text-align: center;
+}
+
+nav ul, div > ul {
+    list-style-type: none;
+}
+
+p {
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Other Styles */
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 14px;
+}
+
+body {
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: rgb(248, 222, 204);
+    color: #511b01;
+}
+
+footer p {
+    margin: 6px;
+    font-size: small;
+}
+
+nav ul {
+    padding: 0;
+    font-size: larger;
+}
+
+nav ul li {
+    display: inline;
+}
+
+img {
+    height: 300px;
+}

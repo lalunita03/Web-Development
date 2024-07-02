@@ -1,0 +1,118 @@
+/* flex layouts */
+
+header, #main-view, aside > div, section, body {
+    display: flex;
+}
+
+aside > div, body {
+    flex-direction: column;
+}
+
+header h1, section, main {
+    flex-grow: 1;
+}
+
+/* Colors */
+
+header, aside {
+    background-color: chocolate;
+}
+
+body, figure {
+    background-color: rgb(248, 222, 204);
+}
+
+header, aside, header a {
+    color: rgb(248, 222, 204);
+}
+
+body, figure a {
+    color: #511b01;
+}
+
+/* Margin, Padding and Borders */
+header h1, nav ul {
+    margin: 0;
+}
+
+figure, footer p {
+    margin: 6px;
+}
+
+footer, #mission {
+    margin: 10px;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+header, aside {
+    padding: 14px;
+}
+
+#mission, footer {
+    border: 6px dotted #511b01;
+}
+
+
+/* Font Styles */
+
+header h1, footer, #mission {
+    text-align: center;
+}
+
+p {
+    font-size: large;
+}
+
+footer p {
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Other Styles */
+
+body {
+    min-height: 100vh;
+    font-family: 'Marker Felt', fantasy;
+}
+
+header {
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: larger;
+}
+
+section {
+    background-color: #c04000;
+    margin-left: 10px;
+    flex-wrap: wrap;
+}
+
+figure {
+    padding: 10px;
+    height: 120px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+img {
+    height: 100px;
+}

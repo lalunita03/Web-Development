@@ -1,0 +1,87 @@
+ <!--
+     Name: Lea Grohmann 
+     CS 132 Spring 2024
+     Date: April 13th, 2024
+     This is the main page for The Tree Store (e-commerce)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tree Store</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">The Tree Store</a></h1>
+        <nav>
+            <ul>
+                <li><a href="questions.html">Ask A Question</a></li>
+                <li>Search</li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="mission">
+            <h2>Mission</h2>
+            <p>At The Tree Store you can buy plants from young to old. And whichever plant you purchase
+                we will donate that same plant to an area where there was a wildwire or deforrestation
+                in order to restore the natural beauty of our planet and heal the Earth.
+            </p>
+        </div>
+
+
+        <div id="main-view">
+            <aside>
+                <h3>Filters</h3>
+    
+                <h4>Tree Family</h4>
+                <div>
+                    <label><input type="checkbox" id="fruit" name="family">Fruit Trees</label>
+                    <label><input type="checkbox" id="nut" name="family">Nut Trees</label>
+                    <label><input type="checkbox" id="conifer" name="family">Conifers</label>
+                    <label><input type="checkbox" id="evergreen" name="family">Evergreens</label>
+                    <label><input type="checkbox" id="flowering" name="family">Flowering Trees</label>
+                    <label><input type="checkbox" id="indoor" name="family">Indoor Plants</label>
+                    <label><input type="checkbox" id="vine" name="family">Vines</label>
+                </div>
+    
+                <h4>Age Range</h4>
+                <label>Age (in years): <input type="range" id="age" name="age" min="0" max="50"></label>
+    
+                <h4>Experience Level</h4>
+                <div>
+                    <label><input type="radio" id="beginnger" name="experience">Beginner</label>
+                    <label><input type="radio" id="novice" name="experience">Novice</label>
+                    <label><input type="radio" id="intermediate" name="experience">Intermediate</label>
+                    <label><input type="radio" id="advanced" name="experience">Advanced</label>
+                    <label><input type="radio" id="expert" name="experience">Expert</label>
+                </div>
+    
+            </aside>
+    
+    
+            <section>
+
+                <figure>
+                    <img src="https://img.ehowcdn.com/630x/clsd/getty/f30040cc89774dbf8db38a0e74bed9d2.jpg?type=webp" alt="Apple Tree">
+                    <figcaption><a href="product.html">Apple Tree</a></figcaption>
+                </figure>
+
+                    <!-- Add more trees -->
+            </section>
+        </div>
+
+       
+
+    </main>
+
+    <footer>
+        <p>Trees are cool!</p>
+    </footer>
+</body>
+</html>

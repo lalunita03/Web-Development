@@ -1,0 +1,53 @@
+ <!--
+     Name: Lea Grohmann 
+     CS 132 Spring 2024
+     Date: April 13th, 2024
+     This is the question page for The Tree Store (e-commerce)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tree Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="questions.css">
+    <script src="utils.js"></script>
+    <script defer src="questions.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">The Tree Store</a></h1>
+        <nav>
+            <ul>
+                <li><a href="questions.html">Ask A Question</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="main-view">
+            <label>Type your question here:<input type="text" id="message"></label>
+            <label>Enter your email address (optional):<input type="email" id="email"></label>
+            <button>Submit</button>
+        </div>
+
+        <div id="done-view" class="hidden">
+            <p>Your Question has been recorded. We will try to get back to you within the next 5 business days</p>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <p>Trees are cool!</p>
+    </footer>
+</body>
+</html>
