@@ -1,5 +1,6 @@
 # CP2 - Boris the Cat
 Designed and developed an interactive website that showcases the personality and activities of my cat Boris.
+
 About Meow page:
   - when entering the correct password ("tuna"), secret information about Boris is revealed
   - you can rate the cuteness of Boris using the slider
@@ -17,6 +18,7 @@ Misson page:
 
 # CP3 - The World Game
 Utilized the Country Data API to fetch data, creating an interactive game where players guess the languages spoken in various countries.
+
 Features to be implemented:
   - allowing user to select the number of questions
   - allowing user to select the continent
